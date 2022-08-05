@@ -1,11 +1,14 @@
 <resources>
-    <string name="app_name">Trivia</string>
+    <string name="app_name">Mi Trivia</string>
     <string name="btn_anterior">Anterior</string>
     <string name="img_descr">imagen</string>
     <string name="btn_falso">Falso</string>
     <string name="btn_verdadero">Verdadero</string>
     <string name="btn_siguiente">Siguiente</string>
     <string name="text_nro_preg">Pregunta %d</string>
+    <string name="ok">OK</string>
+    <string name="correcto">Respuesta Correcta!</string>
+    <string name="incorrecto">Respuesta Errónea</string>
 <!--    Preguntas-->
     <string name="preg1">Las huellas dactilares suelen estar determinadas por nuestros genes, así que pueden tener ciertas semejanzas con las de nuestros progenitores.</string>
     <string name="preg2">Hay más calorias en un solo maní que en 500gr de carne magra</string>
@@ -17,7 +20,4 @@
     <string name="preg8">La principal limitación de las neuronas de nuestro cerebro es que si son dañadas no tienen la posibilidad de regenerarse.</string>
     <string name="preg9">El mismo inventor de la lámpara incandescente inventó la silla eléctrica</string>
     <string name="preg10">Los encendedores fueron inventados antes que los fósforos (cerillos)</string>
-    <string name="ok">OK</string>
-    <string name="correcto">Respuesta Correcta!</string>
-    <string name="incorrecto">Respuesta Errónea</string>
 </resources>

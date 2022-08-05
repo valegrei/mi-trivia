@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Clase que controlara la logica de la aplicacion
+ * Se implementa Parcelable para guardar el estado en un Bundle
+ */
 public class Trivia implements Parcelable {
 
     private List<Pregunta> preguntas;

@@ -103,4 +103,10 @@ public class TriviaActivity extends AppCompatActivity {
         super.onStop();
         FL.i(TAG, "onStop");
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        FL.i(TAG, "onDestroy");
+    }
 }

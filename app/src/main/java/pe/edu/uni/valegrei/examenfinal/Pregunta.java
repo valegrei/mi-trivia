@@ -3,6 +3,10 @@ package pe.edu.uni.valegrei.examenfinal;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/**
+ * Clase que contiene los recursos de las preguntas
+ * Se implementa Parcelable para guardar en Bundle
+ */
 public class Pregunta implements Parcelable {
     private int textId;
     private int imgId;
