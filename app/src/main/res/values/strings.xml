@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Examen Final</string>
+    <string name="btn_anterior">Anterior</string>
+    <string name="img_descr">imagen</string>
+    <string name="btn_falso">Falso</string>
+    <string name="btn_verdadero">Verdadero</string>
+    <string name="btn_siguiente">Siguiente</string>
+<!--    Preguntas-->
+    <string name="preg1">Las huellas dactilares suelen estar determinadas por nuestros genes, así que pueden tener ciertas semejanzas con las de nuestros progenitores.</string>
+    <string name="preg2">Hay más calorias en un solo maní que en 500gr de carne magra</string>
 </resources>
