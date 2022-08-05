@@ -6,9 +6,9 @@ import android.os.Parcelable;
 public class Pregunta implements Parcelable {
     private int textId;
     private int imgId;
-    private Boolean resp;
+    private boolean resp;
 
-    public Pregunta(int textId, int imgId, Boolean resp) {
+    public Pregunta(int textId, int imgId, boolean resp) {
         this.textId = textId;
         this.imgId = imgId;
         this.resp = resp;
@@ -30,11 +30,11 @@ public class Pregunta implements Parcelable {
         this.imgId = imgId;
     }
 
-    public Boolean getResp() {
+    public boolean getResp() {
         return resp;
     }
 
-    public void setResp(Boolean resp) {
+    public void setResp(boolean resp) {
         this.resp = resp;
     }
 
@@ -47,19 +47,19 @@ public class Pregunta implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeInt(this.textId);
         dest.writeInt(this.imgId);
-        dest.writeValue(this.resp);
+        dest.writeByte(this.resp ? (byte) 1 : (byte) 0);
     }
 
     public void readFromParcel(Parcel source) {
         this.textId = source.readInt();
         this.imgId = source.readInt();
-        this.resp = (Boolean) source.readValue(Boolean.class.getClassLoader());
+        this.resp = source.readByte() != 0;
     }
 
     protected Pregunta(Parcel in) {
         this.textId = in.readInt();
         this.imgId = in.readInt();
-        this.resp = (Boolean) in.readValue(Boolean.class.getClassLoader());
+        this.resp = in.readByte() != 0;
     }
 
     public static final Creator<Pregunta> CREATOR = new Creator<Pregunta>() {

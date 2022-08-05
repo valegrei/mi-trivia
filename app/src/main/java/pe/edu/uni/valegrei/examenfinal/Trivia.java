@@ -17,11 +17,26 @@ public class Trivia implements Parcelable {
         this.posicion = posicion;
     }
 
-    public Pregunta getPreguntaActual(){
+    public Pregunta getPreguntaActual() {
         return preguntas.get(posicion);
     }
 
-    //public void
+    //Devuelve true si es correcto
+    public boolean comprobarRespuesta(boolean resp) {
+        return resp == getPreguntaActual().getResp();
+    }
+
+    public void siguiente() {
+        posicion++;
+        if (posicion >= preguntas.size())
+            posicion = 0;
+    }
+
+    public void anterior() {
+        posicion--;
+        if (posicion < 0)
+            posicion = 0;
+    }
 
     public List<Pregunta> getPreguntas() {
         return preguntas;
@@ -90,4 +105,5 @@ public class Trivia implements Parcelable {
             return new Trivia[size];
         }
     };
+
 }
