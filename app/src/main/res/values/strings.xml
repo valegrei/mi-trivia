@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Examen Final</string>
+    <string name="app_name">Trivia</string>
     <string name="btn_anterior">Anterior</string>
     <string name="img_descr">imagen</string>
     <string name="btn_falso">Falso</string>
@@ -17,7 +17,7 @@
     <string name="preg8">La principal limitación de las neuronas de nuestro cerebro es que si son dañadas no tienen la posibilidad de regenerarse.</string>
     <string name="preg9">El mismo inventor de la lámpara incandescente inventó la silla eléctrica</string>
     <string name="preg10">Los encendedores fueron inventados antes que los fósforos (cerillos)</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="correcto">Respuesta Correcta!</string>
     <string name="incorrecto">Respuesta Errónea</string>
 </resources>

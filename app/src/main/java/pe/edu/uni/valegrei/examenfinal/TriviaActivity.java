@@ -8,12 +8,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bosphere.filelogger.FL;
 import com.google.android.material.snackbar.Snackbar;
 
-import pe.edu.uni.valegrei.examenfinal.databinding.ActivityMainBinding;
+import pe.edu.uni.valegrei.examenfinal.databinding.ActivityTriviaBinding;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = MainActivity.class.getSimpleName();
+public class TriviaActivity extends AppCompatActivity {
+    private static final String TAG = TriviaActivity.class.getSimpleName();
     private static final String TRIVIA_KEY = "trivia";
-    private ActivityMainBinding binding;
+    private ActivityTriviaBinding binding;
     private Trivia trivia;
 
     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         FL.i(TAG, "onCreate");
 
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivityTriviaBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.btnAnterior.setOnClickListener(v -> {
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (savedInstanceState != null) {
+            FL.i(TAG, "Se carga trivia guardada");
             trivia = savedInstanceState.getParcelable(TRIVIA_KEY);
         }
 
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void iniciar() {
         if (trivia == null) {
+            FL.i(TAG, "Se crea nueva trivia");
             trivia = Trivia.nuevaTrivia();
         }
     }
@@ -64,10 +66,12 @@ public class MainActivity extends AppCompatActivity {
         binding.imgTrivia.setImageResource(trivia.getPreguntaActual().getImgId());
     }
 
-    private void marcarRespuesta(boolean resp){
-        if(trivia.comprobarRespuesta(resp)){
+    private void marcarRespuesta(boolean resp) {
+        if (trivia.comprobarRespuesta(resp)) {
+            FL.i(TAG, "Respuesta Correcta");
             mostrarSnackbar(R.string.correcto);
-        }else{
+        } else {
+            FL.i(TAG, "Respuesta Incorrecta");
             mostrarSnackbar(R.string.incorrecto);
         }
     }
@@ -82,8 +86,9 @@ public class MainActivity extends AppCompatActivity {
         mostrarPregunta();
     }
 
-    private void mostrarSnackbar(int msgId){
-        Snackbar.make(binding.layout, msgId, Snackbar.LENGTH_INDEFINITE).setAction(R.string.ok,v->{}).show();
+    private void mostrarSnackbar(int msgId) {
+        Snackbar.make(binding.layout, msgId, Snackbar.LENGTH_INDEFINITE).setAction(R.string.ok, v -> {
+        }).show();
     }
 
     @Override

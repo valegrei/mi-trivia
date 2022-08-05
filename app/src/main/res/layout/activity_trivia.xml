@@ -6,7 +6,7 @@
     android:id="@+id/layout"
     android:padding="40dp"
     android:background="@color/gold"
-    tools:context=".MainActivity">
+    tools:context=".TriviaActivity">
 
     <Button
         android:id="@+id/btn_anterior"
@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:text="@string/btn_siguiente" />
+        android:text="@string/btn_siguiente"
+        tools:ignore="RelativeOverlap" />
 
     <TextView
         android:layout_below="@id/btn_anterior"
@@ -36,13 +37,14 @@
         tools:text="Pregunta 1" />
 
     <ImageView
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
         android:id="@+id/img_trivia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_nro_pregunta"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/img_descr"
+        android:scaleType="centerCrop"
+        tools:ignore="ImageContrastCheck"
         tools:srcCompat="@drawable/image2" />
 
     <TextView
