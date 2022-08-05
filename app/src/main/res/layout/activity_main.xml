@@ -23,13 +23,24 @@
         android:layout_alignParentEnd="true"
         android:text="@string/btn_siguiente" />
 
+    <TextView
+        android:layout_below="@id/btn_anterior"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tv_nro_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:text="Pregunta 1" />
+
     <ImageView
         android:layout_marginTop="16dp"
         android:scaleType="centerCrop"
         android:id="@+id/img_trivia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_anterior"
+        android:layout_below="@id/tv_nro_pregunta"
         android:contentDescription="@string/img_descr"
         tools:srcCompat="@drawable/image2" />
 

@@ -5,7 +5,16 @@
     <string name="btn_falso">Falso</string>
     <string name="btn_verdadero">Verdadero</string>
     <string name="btn_siguiente">Siguiente</string>
+    <string name="text_nro_preg">Pregunta %d</string>
 <!--    Preguntas-->
     <string name="preg1">Las huellas dactilares suelen estar determinadas por nuestros genes, así que pueden tener ciertas semejanzas con las de nuestros progenitores.</string>
     <string name="preg2">Hay más calorias en un solo maní que en 500gr de carne magra</string>
+    <string name="preg3">La misma película, sin cortes, ¿dura menos en televisión que en el cine?</string>
+    <string name="preg4">La mayoría de los seres humanos utilizamos solamente el 10% de nuestro cerebro. A menudo se sugiere que mediante algunos procesos una persona puede ser capaz de aprovechar ese potencial no utilizado.</string>
+    <string name="preg5">Los cabellos y las uñas siguen creciendo después de la muerte.</string>
+    <string name="preg6">Si lloras en el espacio tus lágrimas se pegarían en la cara</string>
+    <string name="preg7">Hay más movimientos en Ajedrez que átomos en el universo.</string>
+    <string name="preg8">La principal limitación de las neuronas de nuestro cerebro es que si son dañadas no tienen la posibilidad de regenerarse.</string>
+    <string name="preg9">El mismo inventor de la lámpara incandescente inventó la silla eléctrica</string>
+    <string name="preg10">Los encendedores fueron inventados antes que los fósforos (cerillos)</string>
 </resources>
